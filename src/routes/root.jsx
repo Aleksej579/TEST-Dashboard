@@ -2,6 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 import IconChevron from "../components/icon-chevron";
 import '../styles/sidebar.css'
 import {useEffect} from 'react';
+import IMAGES from '../components/Images'
 
 export default function Root() {
 
@@ -107,7 +108,8 @@ export default function Root() {
                 </nav>
                 
                 <figure className="sidebar__user">
-                    <img src="/src/assets/avatar.png" alt=""></img>
+                    {/* <img src="/src/assets/avatar.png" alt=""></img> */}
+                    <img src={IMAGES.image1} alt=""></img>
                     <figcaption>Evano <span>Project Manager</span></figcaption>
                 </figure>
             </aside>
